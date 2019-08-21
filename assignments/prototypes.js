@@ -39,6 +39,22 @@
   * Instances of CharacterStats should have all of the same properties as GameObject.
 */
 
+function GameObject(attributes){
+  this.newCreatedAt = attributes.createdAt,
+  this.newName = attributes.name,
+  this.newDimensions = attributes.dimensions
+}
+function CharacterStats(attributes){
+  this.newHealthPoints = attributes.healthPoints,
+  this.newGameObject = attributes.GameObject
+}
+function Humanoid(attributes){
+  this.newTeam = attributes.team,
+  this.newWeapons = attributes.weapons,
+  this.newLanguage = attributes.language
+  this.newCharacterStats = attribute.CharacterStats
+}
+
 // Test you work by un-commenting these 3 objects and the list of console logs below:
 
 /*
