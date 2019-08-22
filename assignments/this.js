@@ -16,7 +16,7 @@ function pacMan(){
   console.log(this.pac);
 }
 pacMan();
-const wakawaka = 'wakawaka';
+const pac = 'wakawaka';
 
 // Principle 2
 
@@ -29,7 +29,7 @@ let apple = {
   }
 }
 
-apple.taste();
+apple.eat();
 
 // Principle 3
 
@@ -55,6 +55,4 @@ function milk(){
     taste: 'mmmcreamy'
   }
   
-  delicious = cream.bind(milk);
-  
-  delicious();
+milk.call(cream);
